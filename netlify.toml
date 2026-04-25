@@ -1,11 +1,11 @@
 [build]
-  base    = "apps/chronex-client"
-  command = "cd ../.. && pnpm install --frozen-lockfile && pnpm --filter chronex-client build"
-  publish = ".next"
-
+  command = "pnpm install --frozen-lockfile && pnpm --filter chronex-client build"
+  publish = "apps/chronex-client/.next"
+ 
 [build.environment]
-  NODE_VERSION = "20"
-  PNPM_VERSION = "10"
-
+  NODE_VERSION    = "20"
+  PNPM_VERSION    = "10"
+ 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+ 
