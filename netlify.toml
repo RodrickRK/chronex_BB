@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm install --frozen-lockfile && pnpm --filter chronex-client build"
+  command = "pnpm install --frozen-lockfile && pnpm --filter client build"
   publish = "apps/chronex-client/.next"
  
 [build.environment]
