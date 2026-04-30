@@ -6,7 +6,8 @@ on:
     paths:
       - 'apps/chronex-worker/**'
       - 'packages/db/**'
-  workflow_dispatch: 
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
